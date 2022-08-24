@@ -1,0 +1,19 @@
+#red{
+    background-color: aqua;
+    color:blue;
+    font-size: larger;
+    font-weight: 900;
+    text-align:justify;
+}
+#green{
+    background-color: rgb(255, 0, 0);
+    color:rgb(255, 0, 234);
+    font-size: larger;
+    font-weight: 900;
+    text-align:justify;
+}
+.fontsize
+{
+    font-size: larger;
+    font-weight: 900;
+}

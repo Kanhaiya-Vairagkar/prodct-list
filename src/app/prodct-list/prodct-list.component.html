@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <table class="table">
+        <tbody class="table-stripped">
+            <tr>
+                <th>Sr NO</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Edit</th>
+                <th>View</th>
+                <th>Delete</th>
+            </tr>
+            <tr *ngFor="let product of prodctList;let i =index">
+                <td>{{i + 1}}</td>
+                <td>{{product.prodctName}}</td>
+                <td>{{product.type}}</td>
+                <td><a class="btn btn-warning">Edit</a></td>
+                <td><a class="btn btn-info">View</a></td>
+                <td><a class="btn btn-danger" (click)="deleteProduct(i);">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-success" [routerLink]="'/create'" href="#">Add New</button>
+</div>
